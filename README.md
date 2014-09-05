@@ -1,4 +1,4 @@
-bullhorn-client
+frontdesk-client
 ===============
 
 To automatically compile stylesheets, run:
