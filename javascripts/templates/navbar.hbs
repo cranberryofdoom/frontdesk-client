@@ -1,0 +1,35 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Frontdesk</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        {{#if currentUser}}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user"></span>
+              {{currentUser.email}}
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" id="link-sign-out">Sign Out</a></li>
+            </ul>
+          </li>
+        {{else}}
+          <li><a href="/#/sign_up">Sign Up</a></li>
+          <li><a href="/#/sign_in">Sign In</a></li>
+        {{/if}}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
