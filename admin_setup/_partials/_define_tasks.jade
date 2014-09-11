@@ -1,0 +1,17 @@
+.window
+  .jumbotron
+    p
+      | First, let's identify what needs to get done. What are the day-to-day
+      | tasks that need to be completed?
+  form.form-horizontal(role="form")
+    - var n = 1
+      while n < 4
+        .form-group
+          label.col-sm-1.control-label= "Task " + n++
+          .col-sm-11
+            input.form-control(type="text" placeholder="Enter a task")
+    .form-group
+      .col-sm-12
+        button.pull-left.btn.btn-default
+          span.glyphicon.glyphicon-plus-sign
+        button.pull-right.btn.btn-default Next

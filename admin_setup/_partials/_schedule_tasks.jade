@@ -1,0 +1,54 @@
+.window
+  .jumbotron
+    p
+      | Here are your routine tasks. Some of these
+      | tasks may have a deadline within the day,
+      | others must be completed within a certain
+      | timeslot. Schedule your tasks!
+  .row
+    .col-sm-4
+      .panel.panel-default
+        .panel-body I am a routine task. Hear me roar.
+        .panel-footer.dropdown
+          button#dropdown.btn.btn-default.dropdown-toggle(type="button" data-toggle="dropdown")
+            | Select a type 
+            span.caret
+          ul.dropdown-menu(role="menu")
+            li
+              a(role="menuitem") Fixed start time & end
+            li
+              a(role="menuitem") Fluid start time & end time
+            li
+              a(role="menuitem") Deadline
+    .col-sm-4
+      .panel.panel-default
+        .panel-body I am another routine task. Hear me roar.
+        .panel-footer.dropdown
+          button#dropdown.btn.btn-default.dropdown-toggle(type="button" data-toggle="dropdown")
+            | Select a type 
+            span.caret
+          ul.dropdown-menu(role="menu")
+            li
+              a(role="menuitem") Fixed start time & end
+            li
+              a(role="menuitem") Fluid start time & end time
+            li
+              a(role="menuitem") Deadline
+    .col-sm-4
+      .panel.panel-default
+        .panel-body I am a third routine task. Hear me roar.
+        .panel-footer.dropdown
+          button#dropdown.btn.btn-default.dropdown-toggle(type="button" data-toggle="dropdown")
+            | Select a type 
+            span.caret
+          ul.dropdown-menu(role="menu")
+            li
+              a(role="menuitem") Fixed start time & end
+            li
+              a(role="menuitem") Fluid start time & end time
+            li
+              a(role="menuitem") Deadline
+  .row
+    .col-sm-12
+      button.pull-left.btn.btn-default Back
+      button.pull-right.btn.btn-default Done

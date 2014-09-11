@@ -1,0 +1,35 @@
+.window
+  .jumbotron
+    p
+      | Review these tasks as your volunteers would see them. Does
+      | this match what needs to be done at your shelter from a day
+      | to day basis?
+  .row
+    .col-sm-12
+      .panel.panel-default
+        .panel-body
+          | I am a task. Hear me roar.          
+          input.pull-right(type="checkbox" checked="true")  
+        .panel-footer
+          p.pull-left Due: 
+            strong 9AM
+          p.pull-right Completed by: 
+            strong BOB
+          .clearfix
+    .col-sm-12
+      .panel.panel-default
+        .panel-body
+          | I am another task that has a start time.
+          | Hear me roar.
+          button.btn.btn-default.pull-right Begin
+        .panel-footer
+          p.pull-left Begin at: 
+            strong 12PM
+          p.pull-left Finish at: 
+            strong 1PM
+          p.pull-right Completed by: 
+          .clearfix
+  .row
+    .col-sm-12
+      button.pull-left.btn.btn-default Back
+      button.pull-right.btn.btn-default Finish
