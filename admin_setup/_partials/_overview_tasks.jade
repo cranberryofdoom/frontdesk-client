@@ -11,9 +11,9 @@
           | I am a task. Hear me roar.          
           input.pull-right(type="checkbox" checked="true")  
         .panel-footer
-          p.pull-left Due: 
+          p.pull-left Due at 
             strong 9AM
-          p.pull-right Completed by: 
+          p.pull-right Completed by 
             strong BOB
           .clearfix
     .col-sm-12
@@ -23,11 +23,24 @@
           | Hear me roar.
           button.btn.btn-default.pull-right Begin
         .panel-footer
-          p.pull-left Begin at: 
-            strong 12PM
-          p.pull-left Finish at: 
+          p.pull-left Begin at 
+            strong 12PM 
+            | and finish at 
             strong 1PM
-          p.pull-right Completed by: 
+          p.pull-right Completed by
+          .clearfix
+    .col-sm-12
+      .panel.panel-default
+        .panel-body
+          | I am a third task that has a flexible start time.
+          | Hear me roar.
+          button.btn.btn-default.pull-right Begin
+        .panel-footer
+          p.pull-left Begin at any time between 
+            strong 12PM 
+            | and 
+            strong 1PM
+          p.pull-right Completed by
           .clearfix
   .row
     .col-sm-12
